@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from 'react'
 import './index.css'
-import * as tf from '@tensorflow/tfjs'
+import '@tensorflow/tfjs'
 import * as facemash from '@tensorflow-models/face-landmarks-detection'
 import Webcam from 'react-webcam'
 import { drawMesh } from './utils'
