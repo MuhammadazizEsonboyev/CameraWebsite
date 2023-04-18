@@ -6,11 +6,16 @@ import Webcam from 'react-webcam'
 import axios from 'axios'
 import { Col, Container, Row } from 'react-bootstrap'
 
+
+
+
+
 const App = () => {
   const webcamRef = useRef(null)
   const canvasRef = useRef(null)
   // const [url, setUrl] = useState()
   const [image, setImage] = useState()
+  console.log("Hello ");
 
   const handleClick = () => {
     const imageSrc = webcamRef.current.getScreenshot()
