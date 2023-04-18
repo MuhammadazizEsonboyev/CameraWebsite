@@ -3,15 +3,10 @@ body {
 }
 
 .webcam {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0px;
     text-align: center;
-    z-index: 10;
-    width: 666px;
-    height: 480px;
+    width: 100%;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
 }
 
 
@@ -29,8 +24,12 @@ body {
     text-align: center;
 }
 .cameraBtn {
-    margin-top: 500px;
+    margin-top: 350px;
     margin-bottom: 60px;
+}
+
+.cameraBtn:hover{
+    opacity: .9;
 }
 .imageScreen {
     width: 200px;
@@ -39,4 +38,18 @@ body {
     margin-bottom: 100px;
     margin: auto;
     text-align: center;
+}
+
+.phoneCam{
+    width: 350px;
+    margin: auto;
+    position: relative;
+}
+
+.phone{
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
