@@ -6,16 +6,12 @@ import Webcam from 'react-webcam'
 import axios from 'axios'
 import { Col, Container, Row } from 'react-bootstrap'
 
-
-
-
-
 const App = () => {
   const webcamRef = useRef(null)
   const canvasRef = useRef(null)
   // const [url, setUrl] = useState()
   const [image, setImage] = useState()
-  console.log("Hello ");
+  console.log('Hello ')
 
   const handleClick = () => {
     const imageSrc = webcamRef.current.getScreenshot()
@@ -23,8 +19,8 @@ const App = () => {
     // setUrl(imageSrc)
   }
 
-  const postFunc = (img) => {
-    console.log(img);
+  const postFunc = img => {
+    console.log(img)
     axios
       .post('https://server-tapu.onrender.com/data', { img: img })
       .then(res => {
@@ -43,9 +39,7 @@ const App = () => {
   }, [])
 
   const runFacemesh = async () => {
-    const net = await facemash.load(
-      facemash.SupportedPackages.mediapipeFacemesh
-    )
+    await facemash.load(facemash.SupportedPackages.mediapipeFacemesh)
     setInterval(() => {
       // detect(net)
     }, 10)
