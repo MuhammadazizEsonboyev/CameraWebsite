@@ -25,18 +25,13 @@ body {
     width: 666px;
     height: 480px;
 }
-
-
 .App {
     text-align: center;
 }
-
-
 .cameraBtn {
     margin-top: 500px;
     margin-bottom: 60px;
 }
-
 .imageScreen {
     width: 200px;
     height: 150px;
